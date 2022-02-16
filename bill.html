@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bill</title>
+    
+    <link rel="stylesheet" href="C:\Users\ADMIN\Documents\billcalculator\bill.css">
+
+</head>
+<body>
+    <h1>Bill Calculator</h1>
+    <form>
+        <table>
+            <tr>
+                <td>Product Name</td>
+                <td><input type="text" id="ProductName" name=" Product Name" required placeholder="Product Name"></td>
+            </tr>
+            <tr>
+                <td>Product Price in Rs.</td>
+                <td><input type="number" id="price" name=" Product Price" required placeholder="Product Price"></td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td><input type="number" id="qty" name="Enter Quantity" required placeholder="Enter quantity"></td>
+            </tr>
+            <tr>
+                <td>Total Price in Rs.</td>
+               <td><output for="price qty" id="totalprice"></output></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit"id="submit" name="submit" onclick="return calculateTotalPrice();"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+<script>
+    function calculateTotalPrice(){
+    var pr=document.getElementById("price").value;
+    var qnty=document.getElementById("qty").value;
+    document.getElementById("totalprice").innerHTML=(parseInt(pr)*parseInt(qnty));
+    return false;
+}
+</script>
+</html>

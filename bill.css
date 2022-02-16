@@ -1,0 +1,25 @@
+h1{
+    text-align:center;
+    color:#FF00FF;
+    font-style:italic;
+    font-weight: bold;
+
+}
+table{
+
+    text-align: left;
+    margin-left:35%;
+    border-spacing: 10px;
+    border-width: 10%;
+    border-style: solid;
+    background-color: #F899A4;
+
+}
+table, th, td {
+    border: 1px solid white;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
